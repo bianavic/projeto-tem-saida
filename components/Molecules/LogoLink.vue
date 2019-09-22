@@ -1,22 +1,23 @@
 <template>
     <div class="container-header">
-        <div class="logo">
-            <nuxt-link to="javascript:void(0)">
-                <img src="../../assets/logos/logo-tem-saida-header.jpg" alt="Logo Tem Saida" class="tem-saida-logo">
+        <div class="logo-link">
+            <nuxt-link to="/">
+                <Logo/>
             </nuxt-link>
         </div>
     </div>
 </template>
 
 <script>
+    import Logo from '../Atoms/Logo'
   export default {
-    name: 'Logo'
+    name: 'LogoLink',
+    components: {
+      Logo
+    }
   }
 </script>
 
 <style scoped>
-    .tem-saida-logo {
-        width: 15vw;
-        height: 6vh;
-    }
+
 </style>

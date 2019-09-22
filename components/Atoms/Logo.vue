@@ -1,9 +1,7 @@
 <template>
     <div class="container-header">
         <div class="logo">
-            <nuxt-link to="javascript:void(0)">
-                <img src="../../assets/logos/logo-tem-saida-header.jpg" alt="Logo Tem Saida" class="tem-saida-logo">
-            </nuxt-link>
+            <img src="../../assets/logos/logo-tem-saida-header.jpg" alt="Logo Tem Saida" class="tem-saida-logo">
         </div>
     </div>
 </template>
