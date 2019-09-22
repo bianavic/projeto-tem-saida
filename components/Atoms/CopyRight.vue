@@ -15,6 +15,6 @@
   p {
     align-content: center;
     color: #000;
-    font-size: 4vw;
+    font-size: 1vw;
   }
 </style>
