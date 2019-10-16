@@ -1,11 +1,11 @@
 import { MongooseModule } from '@nestjs/mongoose';
 import { Module } from '@nestjs/common';
-import { ConfigModule } from './modules/config.module';
+import { ConfigModule } from '../modules/config.module';
 
-import { ConfigService } from './services/config.service';
+import { ConfigService } from '../services/config.service';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AppController } from '../controllers/app.controller';
+import { AppService } from '../services/app.service';
 
 @Module({
   imports: [
