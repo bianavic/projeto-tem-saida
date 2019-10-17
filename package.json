@@ -16,7 +16,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "seed:db": "ts-node -r tsconfig-paths/register ./src/seeds/index.ts"
   },
   "dependencies": {
     "@nestjs/common": "^6.0.0",
@@ -24,6 +25,7 @@
     "@nestjs/mongoose": "6.1.2",
     "@nestjs/platform-express": "^6.0.0",
     "dotenv": "8.1.0",
+    "mongo-seeding": "3.4.0-alpha.0",
     "mongoose": "5.7.5",
     "reflect-metadata": "^0.1.12",
     "rimraf": "^2.6.2",
