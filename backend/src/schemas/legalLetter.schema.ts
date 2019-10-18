@@ -2,7 +2,7 @@ import { Schema, Document } from 'mongoose';
 
 export interface ILegalLetter extends Document {
     created_at: Date;
-    justificativa: String;
+    justification: String;
   }
 
 export const LegalLetterSchema = new Schema({
@@ -10,7 +10,7 @@ export const LegalLetterSchema = new Schema({
         type: Date,
         default: Date.now(),
       },
-      justificativa : {
+      justification: {
         type: String,
       },
 });

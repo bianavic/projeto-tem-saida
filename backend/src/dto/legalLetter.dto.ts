@@ -1,4 +1,4 @@
 export class CreateLegalLetterDTO {
-    readonly justificativa: string;
+    readonly justification: string;
     // tslint:disable-next-line:variable-name
   }
