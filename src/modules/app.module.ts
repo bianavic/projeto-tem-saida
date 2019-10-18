@@ -4,8 +4,7 @@ import { ConfigModule } from '../modules/config.module';
 
 import { ConfigService } from '../services/config.service';
 
-import { AppController } from '../controllers/app.controller';
-import { AppService } from '../services/app.service';
+import { UserModule } from './user.module';
 
 @Module({
   imports: [
@@ -15,11 +14,11 @@ import { AppService } from '../services/app.service';
         uri: configService.get('DATABASE_MONGODB_URI'),
         useNewUrlParser: true,
         useUnifiedTopology: true,
+        useCreateIndex: true,
       }),
       inject: [ConfigService],
     }),
+    UserModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}
