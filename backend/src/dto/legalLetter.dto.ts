@@ -1,5 +1,4 @@
-export class CreateOficioDTO {
-    readonly oficio_id: string;
+export class CreateLegalLetterDTO {
     readonly justificativa: string;
     // tslint:disable-next-line:variable-name
   }
