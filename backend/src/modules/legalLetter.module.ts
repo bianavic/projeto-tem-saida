@@ -8,7 +8,7 @@ import { LegalLetterSchema } from '../schemas/legalLetter.schema';
 @Module({
     imports: [
       MongooseModule.forFeature([
-        { name: 'legalLetter', schema: LegalLetterSchema },
+        { name: 'legal_letter', schema: LegalLetterSchema },
       ]),
     ],
   
