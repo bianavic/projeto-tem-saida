@@ -1,9 +1,10 @@
 <template>
-    <div class="main-container">
+    <div class="main container">
         <div class="title">
-            <h1> O Programa </h1>
+            <h2> O Programa </h2>
         </div>
-        <div class="description">
+        <div class="row"
+        <div class="col-sm description">
             Lançado em agosto de 2018, o Programa Tem Saída é voltado para mulheres em situação de violência
             doméstica e familiar. Por meio de uma rede de apoio e organizações parceiras, viabiliza o ingresso da mulher
             no mercado de trabalho, proporcionando autonomia financeira a ela e, por consequência, o fim do ciclo de
@@ -11,6 +12,7 @@
             São Paulo, Ministério Público, Defensoria Pública, Tribunal de Justiça, OAB-SP e ONU Mulheres. Missão
             Quebrar o ciclo de violência à mulher por meio da viabilização de seu ingresso no mercado de trabalho e sua
             autonomia financeira.
+        </div>
         </div>
     </div>
 </template>
@@ -22,11 +24,9 @@
 </script>
 
 <style scoped>
-    .main-container {
-        padding-left: 117px;
+    .main {
         padding-top: 93px;
         padding-bottom: 93px;
-        max-width: 842px;
     }
 
     .title {

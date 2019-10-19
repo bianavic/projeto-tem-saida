@@ -14,7 +14,7 @@
 
 <style scoped>
     .tem-saida-logo {
-        width: 15vw;
-        height: 6vh;
+        width: 10vw;
+        height: auto;
     }
 </style>

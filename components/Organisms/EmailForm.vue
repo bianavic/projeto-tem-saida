@@ -1,7 +1,7 @@
 <template>
-    <div class="main-container">
-        <div class="form-title">
-            contato
+    <div class="main container">
+        <div class="title">
+            <h2>contato</h2>
         </div>
         <div class="form-content">
             <Form/>
@@ -22,18 +22,16 @@
 </script>
 
 <style scoped>
-    .main-container {
-        background-color: yellowgreen;
-        height: 710px;
+    .main {
+        padding-bottom:100px;
     }
 
-    .form-title {
+    .title {
         text-align: center;
         padding-top: 80px;
         padding-bottom: 80px;
         color: #5A297B;
         text-transform: uppercase;
-        font-size: 35px;
     }
 
     .form-content {

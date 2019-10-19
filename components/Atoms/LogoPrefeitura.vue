@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <img src="../../assets/logos/logo-prefeitura-sp.jpg" alt="Logo Prefeitura de São Paulo" class="prefeitura-logo">
   </div>
 </template>

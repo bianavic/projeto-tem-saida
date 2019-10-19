@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <div class="logo-prefeitura">
       <logo-prefeitura/>
     </div>
@@ -30,7 +30,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #dae5dd;
+    background-color: #EEE4F4;
   }
 
   .copy-right {
