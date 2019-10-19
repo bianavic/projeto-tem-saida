@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="">
         <BannerHome/>
         <div class="ts-header">
         </div>
@@ -8,6 +8,9 @@
         </div>
         <div class="how-to">
             <HowTo/>
+        </div>
+        <div class="how-to">
+            <Partner/>
         </div>
         <div class="email-form">
             <FormEmail/>
@@ -20,6 +23,7 @@
   import BannerHome from '../components/Molecules/BannerHome'
   import AboutText from '../components/Atoms/AboutText'
   import HowTo from '../components/Atoms/HowTo'
+  import Partner from '../components/Atoms/Partner'
   import FormEmail from '../components/Organisms/EmailForm'
 
   export default {
@@ -28,6 +32,7 @@
       BannerHome,
       AboutText,
       HowTo,
+      Partner,
       FormEmail
     }
   }
