@@ -47,5 +47,8 @@
         background: #F4F4F4;
         border-radius: 3px;
     }
-
+    .text-area-value {
+        width: 840px;
+        height: 540px;
+    }
 </style>
