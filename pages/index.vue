@@ -9,6 +9,9 @@
         <div class="how-to">
             <HowTo/>
         </div>
+        <div class="email-form">
+            <FormEmail/>
+        </div>
 
     </div>
 </template>
@@ -17,14 +20,15 @@
   import BannerHome from '../components/Molecules/BannerHome'
   import AboutText from '../components/Atoms/AboutText'
   import HowTo from '../components/Atoms/HowTo'
-
+  import FormEmail from '../components/Organisms/EmailForm'
 
   export default {
     layout: 'tem-saida-layout',
     components: {
       BannerHome,
       AboutText,
-      HowTo
+      HowTo,
+      FormEmail
     }
   }
 </script>
