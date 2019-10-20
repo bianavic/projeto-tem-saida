@@ -19,17 +19,29 @@
     crossorigin="anonymous"></script>
 
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="cadastro.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="./cadastro.css">
 </head>
 
 <body>
 
   <header>
-    <img src="logo.jpg" alt="Logo Tem Saída" width="161" height="63">
-    <input type="text" name="PesquisarOficio" id="PesquisarOficio" placeholder="Pesquisar por Ofício">
-    <i class="fas fa-search"></i>
+    <img src="../imgs/logo.jpg" alt="Logo Tem Saída" width="161" height="63">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+          aria-haspopup="true" aria-expanded="false">Pesquisar Ofício</a>
+      <div class="dropdown-menu">
+          <a class="dropdown-item" href="#"><button>Nome</button></a>
+          <a class="dropdown-item" href="#"><button>CPF</button></a>
+          <a class="dropdown-item" href="#"><button>RNE</button></a>
+          <a class="dropdown-item" href="#"><button>PIS</button></a>
+          <a class="dropdown-item" href="#"><button>Ofício</button></a>
+
+      </div>
+
+  </li>
     <input type="text" name="Pesquisar" id="Pesquisar" placeholder="Pesquisar">
+    <button><i class="fas fa-search"></i></button>
     <i class="fas fa-bell"></i>
     <i class="fas fa-user-circle"></i>
 
@@ -281,7 +293,7 @@
 
       <footer>
         <div class="rodape">
-          <img src="logo_footer_sp.png" alt="" width="100px">
+          <img src="../imgs/logo_footer_sp.png" alt="" width="100px">
           &copy; COPYRIGTH 2017, Secretária Municipal de desenvolvimento Econômico Av São João, 473 - 4º e 5º andares Tel. 3224-6000
         </div>
         </footer>
