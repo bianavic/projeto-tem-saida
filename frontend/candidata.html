@@ -82,7 +82,7 @@
                     <td>
                         <label for="rg">Idades: </label>
                     <td align="left">
-                        <input type="text" name="nome">
+                        <input type="text" name="rg">
                     </td>
 
                 <tr>
@@ -128,19 +128,19 @@
                     <td> <label for="numero">Número:</label></td>
                     <td align="left"> <input type="number" name="numero" id="numero"></td>
 
-                    <td><label for="numero">Complemento:</label></td>
+                    <td><label for="complemento">Complemento:</label></td>
                     <td align="left"> <input type="text" name="complemento" id="complemento"></td>
                 </tr>
                 </tr>
 
                 <tr>
                     <td><label for="telefone">Telefone: </label></td>
-                    <td align="left"><input type="text" name="telefone"></td>
+                    <td align="left"><input type="number" name="telefone"></td>
                     <td><label for="telefone">Telefone: </label></td>
-                    <td align="left"><input type="text" name="telefone"></td>
+                    <td align="left"><input type="number" name="telefone"></td>
                     <td><label for="telefone">Telefone: </label></td>
                     <td align="left">
-                        <input type="text" name="telefone"></td>
+                        <input type="number" name="telefone"></td>
                 </tr>
 
                 <tr>
@@ -182,16 +182,16 @@
 
                     <tr>
                         <td> <label for="cep">Curso: </label> </td>
-                        <td align="left"> <input type="text" name="curso" id="curso" /> </td>
+                        <td align="left"> <input type="number" name="cep" id="curso" /> </td>
                     </tr>
 
                     <td> <label for="local">Local:</label> </td>
                     <td align="left"> <input type="text" name="local" id="local" /> </td>
 
                     <td> <label for="cidade">Período: </label> </td>
-                    <td align="left"> <input type="text" name="periodo" id="periodo"></td>
+                    <td align="left"> <input type="text" name="cidade" id="cidade"></td>
 
-                    <!-- TODO : adicionar curso -->
+                    <!-- TODO : botao adicionar curso -->
                     </tr>
                 </table>
 
@@ -222,7 +222,7 @@
                         <td> <label for="periodo">Período: </label> </td>
                         <td align="left"> <input type="text" name="periodo" id="periodo"></td>
 
-                        <!-- TODO : adicionar experiencia -->
+                        <!-- TODO : botao adicionar experiencia -->
                     </tr>
                 </table>
 
@@ -230,6 +230,7 @@
 
             <fieldset>
 
+                <!-- PERCEPCOES NO ATENDIMENTO -->
 
                 <tr>
                     <legend>Percepções no Atendimento</legend>
@@ -265,7 +266,6 @@
                         <label for="medo">Medo</label>
                     </p>
 
-
                     <div>
                         <!-- OUTROS -->
                         <legend>Outros</legend>
@@ -273,8 +273,38 @@
                         <textarea class="form-control" id="outros" rows="2" cols="33"></textarea>
                     </div>
 
+                </tr>
+
+                <!-- TODO: ENCAMINHAMENTOS -->
+
+
+                <legend>Encaminhamentos</legend>
+                <td><label for="fisico">Serviços CATe</label></td>
+                <p>
+                    <input type="radio" name="elaboracaoCV" id="elaboracaoCV" value="small" />
+                    <label for="size_1">Elaboração de Currículo</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="processoSeletivo" id="processoSeletivo" value="small" />
+                    <label for="processoSeletivo">Orientação para Processo Seletivo</label>
+                </p>
+
+                <p>
+                    <input type="radio" name="psicologica" id="psicologica" value="small" />
+                    <label for="psicologica">Orientação Psicológica</label>
+                </p>
+
+                <legend>Realizado em</legend>
+
+
+                <!-- TODO: VAGAS -->
+
+
+                <legend>Vagas</legend>
 
             </fieldset>
+
 
             <div>
                 <!-- OBSERVAÇÕES -->
@@ -285,37 +315,7 @@
 
             <br />
 
-            <!-- OFICIO -->
-            <!-- <fieldset>
-      <legend>Ofício</legend>
-      <table cellspacing="10">
-
-        <tr>
-          <td><label for="imagem">Documento:</label></td>
-          <td> <input type="file" name="imagem"> </td>
-        </tr>
-
-        <tr>
-          <td> <label>CPF/Login do Usuário:</label> </td>
-          <td align="left"><input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2"
-              size="2" maxlength="2">
-        </tr>
-        <tr>
-          <td><label for="pass">Senha: </label></td>
-          <td align="left"><input type="password" name="pass"></td>
-        </tr>
-        <tr>
-          <td> <label for="passconfirm">Confirme a senha: </label></td>
-          <td align="left"><input type="password" name="passconfirm"> </td>
-        </tr>
-
-      </table>
-    </fieldset>
-    <br />
-
-    <input type="submit">
-    <input type="reset" value="Limpar">
- -->
+            <!-- BOTAO SALVAR E CANCELAR -->
     </form>
 
     <script src="cadastro.js"> </script>
