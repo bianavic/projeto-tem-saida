@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Projeto Tem Saída - Cadastrar parceiro</title>
+  <meta name="description" content="cadastro de parceiro do projeto tem saída">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="https://kit.fontawesome.com/3b76d8d400.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Tem Saída" width="161" height="63">
+    <input type="text" name="PesquisarOficio" id="PesquisarOficio" placeholder="Pesquisar por Ofício">
+    <i class="fas fa-search"></i>
+    <input type="text" name="Pesquisar" id="Pesquisar" placeholder="Pesquisar">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-user-circle"></i>
+
+  </header>
+
+  <hr>
+  <div class="pai">
+    <div class="menu-lateral">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Página Inicial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cadastro de Oficio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pesquisar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Relatório</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="form">
+      <h1> Cadastro de Parceiro</h1>
+
+      <form action="Script_do_Formulario" method="post">
+
+        <!-- DADOS PESSOAIS-->
+        <fieldset>
+          <table cellspacing="10">
+            <tr>
+              <td>
+                <label for="nome">Empresa: </label>
+              </td>
+              <td align="left">
+                <input type="text" name="empresa">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="codigo">Código: </label>
+              </td>
+              <td align="left">
+                <input type="text" name="codigo">
+              </td>
+              <td>
+                <label for="cnpj">CNPJ: </label>
+              </td>
+              <td align="left">
+                <input type="text" name="cnpj" size="13" maxlength="13">
+              </td>
+            </tr>
+            <tr>
+              
+              <td>
+                <label>Área de atuação:</label>
+              </td>
+              <td align="left">
+                <input type="text" name="area" size="9">
+              </td>
+             
+            </tr>
+            <tr>
+              <td>
+                <label>Responsavel:</label>
+              </td>
+              <td align="left">
+                <input type="text" name="area" size="9">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <br />
+        <!-- ENDEREÇO -->
+        <fieldset>
+          <legend>Endereço</legend>
+          <table cellspacing="10">
+            <tr>
+            <tr>
+              <td> <label for="cep">CEP: </label> </td>
+              <td align="left"> <input type="number" name="cep" id="cep" /> </td>
+            </tr>
+            <tr>  
+              <td> <label for="endereco">Endereço:</label> </td>
+              <td align="left"> <input type="text" name="endereco" id="endereco" /> </td>
+            </tr>
+
+            <td> <label for="complemento">Complemento: </label> </td>
+            <td align="left"> <input type="text" name="complemento" id="complemento"></td>
+
+            <td> <label for="bairro">Bairro: </label> </td>
+            <td align="left"> <input type="text" name="bairro" id="bairro"></td>
+            <tr>
+              <td><label for="cidade">Cidade:</label></td>
+              <td align="left"> <input type="text" name="cidade" id="cidade" /></td>
+
+              <td> <label for="estado">Estado:</label></td>
+              <td align="left"> <input type="estado" name="estudo" id="estado"></td>
+            </tr>
+            </tr>
+          </table>
+
+          <br />
+
+          <legend>Contatos</legend>
+          <table cellspacing="10">
+            <tr>
+              <tr>
+                <td> <label for="email">E-mail: </label> </td>
+                <td align="left"> <input type="text" name="email" id="email" /> </td>
+              </tr>
+              <tr>
+                <td> <label for="email">E-mail: </label> </td>
+                <td align="left"> <input type="text" name="email" id="email" /> </td>
+              </tr>
+              <tr>
+                <td> <label for="telefone1">Telefone 1: </label> </td>
+                <td align="left"> <input type="number" name="telefone1" id="telefone1"></td>
+                <td> <label for="obs">Obs: </label> </td>
+                <td align="left"> <input type="text" name="observacoes" id="observacoes"></td>
+              </tr>
+              <tr>
+                <td> <label for="telefone1">Telefone 2: </label> </td>
+                <td align="left"> <input type="number" name="telefone2" id="telefone2"></td>
+                <td> <label for="obs">Obs: </label> </td>
+                <td align="left"> <input type="text" name="observacoes" id="observacoes"></td>
+              </tr>
+              <tr>
+                <td> <label for="telefone1">Telefone 3: </label> </td>
+                <td align="left"> <input type="number" name="telefone3" id="telefone3"></td>
+                <td> <label for="obs">Obs: </label> </td>
+                <td align="left"> <input type="text" name="observacoes" id="observacoes"></td>
+              </tr>
+            
+            </tr>
+          </table>
+
+          <br />
+
+          <div>
+            <!-- OUTRAS OBSERVAÇÕES -->
+            <legend>Outras observações</legend>
+            <label for="observacoes"></label>
+            <textarea class="form-control" id="observacoes" rows="5" cols="33">Observações</textarea>
+          </div>
+
+        </fieldset>
+        <br />
+
+        <br />
+
+        <input type="submit" value="Salvar">
+
+      </form>
+    </div>
+
+      <footer>
+        <div class="rodape">
+          <img src="logo_footer_sp.png" alt="" width="100px">
+          &copy; COPYRIGTH 2017, Secretária Municipal de desenvolvimento Econômico Av São João, 473 - 4º e 5º andares Tel. 3224-6000
+        </div>
+        </footer>
+    </div>
+</div>
+
+
+
+  <script src="cadastro.js"> </script>
+</body>
+
+</html>

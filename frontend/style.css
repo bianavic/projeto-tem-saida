@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+
+    max-height: 99px;
+    background-color: #ffffff;
+}
+
+.menu-lateral{
+    max-width: 311px;
+    
+   
+}
+
+.teste{
+    display: flex;
+    width: 1100px;
+    color: blueviolet;
+   flex-direction: row;
+}
+
+.pai{
+    display: flex;
+}
+
+footer{
+    background-color: rgba(90, 41, 123, 0.1);
+    height: 99px;
+    text-align: center;
+   
+ 
+}
+
+.rodape{
+  
+}
