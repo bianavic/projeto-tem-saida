@@ -5,14 +5,11 @@
         </div>
         <div class="menu-options">
             <div class="menu">
-                <nuxt-link to="#">O Programa</nuxt-link>
-                <nuxt-link to="#">Como funciona</nuxt-link>
-                <nuxt-link to="#">Parceiros</nuxt-link>
-                <nuxt-link to="#">Contato</nuxt-link>
+                
+               <input type="text" pattern="Pesquisar Oficio">
+               <input type="text" placeholder="Pesquisar">
             </div>
-            <div class="button-logIn">
-                <button @click="fazerLogin()" class="button-acccess"><nuxt-link to="/logado">Acesso Restrito</nuxt-link></button>
-            </div>
+           
         </div>
     </div>
 
@@ -22,15 +19,11 @@
   import LogoLink from '../Molecules/LogoLink'
 
   export default {
-    name: 'Header',
+    name: 'Logado',
     components: {
       LogoLink
     },
-    methods:{
-      fazerLogin: function(){
-        alert('Fazendo LogIn')
-      }
-    }
+   
   }
 </script>
 

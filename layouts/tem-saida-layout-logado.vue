@@ -7,17 +7,12 @@
 </template>
 
 <script>
-  import Header from '../components/Organisms/Header'
-  import Main from '../components/Organisms/Main'
-  import Aside from '../components/Organisms/Aside'
-  import Footer from '../components/Organisms/Footer'
+  import HeaderLogado from '../components/Organisms/Logado'
+  
 
   export default {
     components: {
-      Header,
-      Main,
-      Aside,
-      Footer
+      Logado
     }
   }
 </script>
