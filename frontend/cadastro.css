@@ -1,3 +1,12 @@
+
+.container{
+
+max-width: 1120px;
+}
+.form{
+    background-color: #E5E5E5;
+
+}
 label,
 textarea {
     font-size: .8rem;
@@ -32,13 +41,13 @@ legend {
 
 /* Style for "Background" */
 body {
-    width: 1440px;
+    /* width: 1440px;
     height: 2493px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; */
     /* Style for "Background" */
-    width: 1440px;
+    /* width: 1440px;
     height: 2493px;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4; */
 }
 
 h1 {
