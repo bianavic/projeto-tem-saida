@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projeto Tem Saída - Cadastro de Candidata</title>
+    <meta name="description" content="cadastro de candidata do projeto tem saída">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://kit.fontawesome.com/3b76d8d400.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="candidata.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.jpg" alt="Logo Tem Saída" width="161" height="63">
+        <input type="text" name="PesquisarOficio" id="PesquisarOficio" placeholder="Pesquisar por Ofício">
+        <i class="fas fa-search"></i>
+        <input type="text" name="Pesquisar" id="Pesquisar" placeholder="Pesquisar">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-user-circle"></i>
+
+    </header>
+
+    <hr>
+    <div class="pai">
+        <div class="menu-lateral">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Página Inicial</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Candidatas</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><button>Pesquisar</button></a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Vagas</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><button>Cadastrar Vagas</button></a>
+                        <a class="dropdown-item" href="#"><button>Vagas Disponível</button></a>
+
+                    </div>
+
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">Parceiros</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><button>Cadastrar Parceiro</button></a>
+
+
+                    </div>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Relatório</a>
+                </li>
+            </ul>
+        </div>
+        <h1> Cadastro de Candidata</h1>
+
+        <form action="Script_do_Formulario" method="post">
+
+            <!-- DADOS PESSOAIS-->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <table cellspacing="10">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome Completo: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nome">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="rg">RG: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="rg" size="13" maxlength="13">
+                        </td>
+                        <td>
+                            <label>CPF:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2"
+                                size="2" maxlength="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nascimento: </label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                            <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                            <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                        </td>
+                        <td>
+                            <label>Nacionalidade:</label>
+                        </td>
+                        <td align="left">
+                            <input type="text" name="nacionalidade" size="13" maxlength="13">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="estadoCivil">Estado Civil:</label>
+                        </td>
+                        <td align="left">
+                            <select name="estadoCivil">
+                                <option value="casada">casada</option>
+                                <option value="divorciada">divorciada</option>
+                                <option value="solteira">solteira</option>
+                                <option value="viuva">viúva</option>
+                        </td>
+
+                        <td>
+                            <label for="filhos">Filhos:</label>
+                        </td>
+                        <td align="left">
+                            <select name="filhos">
+                                <option value="filho1">0</option>
+                                <option value="filho2">1-2</option>
+                                <option value="filho3">3-4</option>
+                                <option value="filho4">mais de 4</option>
+                        </td>
+                        <td>
+                            <label for="rg">Idades: </label>
+                        <td align="left">
+                            <input type="text" name="rg">
+                        </td>
+
+                    <tr>
+                        <td>
+                            <label for="estadoCivil">Grávida:</label>
+                        </td>
+                        <td align="left">
+                            <select name="estadoCivil">
+                                <option value="casada">Não</option>
+                                <option value="divorciada">Sim</option>
+                                <option value="solteira">Amamentando</option>
+                        </td>
+
+                    </tr>
+
+                </table>
+            </fieldset>
+
+            <br />
+            <!-- ENDEREÇO -->
+            <fieldset>
+                <legend>Dados de Contato</legend>
+                <table cellspacing="10">
+
+                    <tr>
+                    <tr>
+                        <td> <label for="cep">CEP: </label> </td>
+                        <td align="left"> <input type="number" name="cep" id="cep" /> </td>
+                    </tr>
+
+                    <td> <label for="estado">Estado:</label> </td>
+                    <td align="left"> <input type="text" name="estado" id="estado" /> </td>
+
+                    <td> <label for="cidade">Cidade: </label> </td>
+                    <td align="left"> <input type="text" name="cidade" id="cidade"></td>
+
+                    <td> <label for="bairro">Bairro: </label> </td>
+                    <td align="left"> <input type="text" name="bairro" id="bairro"></td>
+                    <tr>
+                        <td><label for="endereco">Endereço:</label></td>
+                        <td align="left"> <input type="text" name="endereco" id="endereco" /></td>
+
+                        <td> <label for="numero">Número:</label></td>
+                        <td align="left"> <input type="number" name="numero" id="numero"></td>
+
+                        <td><label for="complemento">Complemento:</label></td>
+                        <td align="left"> <input type="text" name="complemento" id="complemento"></td>
+                    </tr>
+                    </tr>
+
+                    <tr>
+                        <td><label for="telefone">Telefone: </label></td>
+                        <td align="left"><input type="number" name="telefone"></td>
+                        <td><label for="telefone">Telefone: </label></td>
+                        <td align="left"><input type="number" name="telefone"></td>
+                        <td><label for="telefone">Telefone: </label></td>
+                        <td align="left">
+                            <input type="number" name="telefone"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="contato">Horários de contato:</label></td>
+                        <td align="left"><input type="radio" required name="title" id="r1" value="manha"><label
+                                for="r1">manha</label>
+                        </td>
+                        <td align="left"><input type="radio" required name="title" id="r2" value="tarde"><label
+                                for="r2">tarde</label>
+                        </td>
+                        <td align="left"><input type="radio" required name="title" id="r1" value="noite"><label
+                                for="r1">noite</label>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <!-- CURSOS e HABILIDADES -->
+                <fieldset>
+                    <legend>Cursos e Habilidades</legend>
+                    <table cellspacing="10">
+
+                        <tr>
+                            <td>
+                                <label for="escolaridade">Escolaridade:</label>
+                            </td>
+                            <td align="left">
+                                <select name="escolaridade">
+                                    <option value="analfabeto">Analfabeto</option>
+                                    <option value="alfabetizada">Alfabetizada</option>
+                                    <option value="fundamentalIncomp">Ensino Fudamental Incompleto</option>
+                                    <option value="fundamentalComp">Ensino Fudamental Completo</option>
+                                    <option value="medioIncomp">Ensino Médio Incompleto</option>
+                                    <option value="medioComp">Ensino Médio Completo</option>
+                                    <option value="superiorIncompleto">Ensino Superior Incompleto</option>
+                                    <option value="superiorCompleto">Ensino Superior Completo</option>
+                                    <option value="acimaSuperior">Acima de Ensino Superior</option>
+                            </td>
+
+                        <tr>
+                            <td> <label for="cep">Curso: </label> </td>
+                            <td align="left"> <input type="number" name="cep" id="curso" /> </td>
+                        </tr>
+
+                        <td> <label for="local">Local:</label> </td>
+                        <td align="left"> <input type="text" name="local" id="local" /> </td>
+
+                        <td> <label for="cidade">Período: </label> </td>
+                        <td align="left"> <input type="text" name="cidade" id="cidade"></td>
+
+                        <!-- TODO : botao adicionar curso -->
+                        </tr>
+                    </table>
+
+                    <div>
+                        <!-- HABILIDADES -->
+                        <legend>Habilidades</legend>
+                        <label for="habilidades"></label>
+                        <textarea class="form-control" id="habilidades" rows="5" cols="33">Habilidades</textarea>
+                    </div>
+
+                </fieldset>
+
+                <!-- EXPERIÊNCIA PROFISSIONAL -->
+                <fieldset>
+                    <legend>Experiência Profissional</legend>
+                    <table cellspacing="10">
+
+                        <tr>
+                            <td> <label for="empresa">Empresa:</label> </td>
+                            <td align="left"> <input type="text" name="empresa" id="empresa" /> </td>
+                        </tr>
+
+                        <tr>
+
+                            <td> <label for="cargo">Cargo: </label> </td>
+                            <td align="left"> <input type="text" name="cargo" id="cargo"></td>
+
+                            <td> <label for="periodo">Período: </label> </td>
+                            <td align="left"> <input type="text" name="periodo" id="periodo"></td>
+
+                            <!-- TODO : botao adicionar experiencia -->
+                        </tr>
+                    </table>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <!-- PERCEPCOES NO ATENDIMENTO -->
+
+                    <tr>
+                        <legend>Percepções no Atendimento</legend>
+                        <td><label for="fisico">Físico</label></td>
+                        <p>
+                            <input type="radio" name="ferida" id="ferida" value="small" />
+                            <label for="size_1">Ferida</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="abalada" id="abalada" value="small" />
+                            <label for="abalada">Abalada</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="tremula" id="tremula" value="small" />
+                            <label for="tremula">Tremula</label>
+                        </p>
+
+                        <td><label for="fisico">Psicológico</label></td>
+                        <p>
+                            <input type="radio" name="choro" id="choro" value="small" />
+                            <label for="choro">Choro</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="desconfiada" id="desconfiada" value="small" />
+                            <label for="desconfiada">Desconfiada</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="medo" id="medo" value="small" />
+                            <label for="medo">Medo</label>
+                        </p>
+
+                        <div>
+                            <!-- OUTROS -->
+                            <legend>Outros</legend>
+                            <label for="outros"></label>
+                            <textarea class="form-control" id="outros" rows="2" cols="33"></textarea>
+                        </div>
+
+                    </tr>
+
+                    <!-- TODO: ENCAMINHAMENTOS -->
+
+
+                    <legend>Encaminhamentos</legend>
+                    <td><label for="fisico">Serviços CATe</label></td>
+                    <p>
+                        <input type="radio" name="elaboracaoCV" id="elaboracaoCV" value="small" />
+                        <label for="size_1">Elaboração de Currículo</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="processoSeletivo" id="processoSeletivo" value="small" />
+                        <label for="processoSeletivo">Orientação para Processo Seletivo</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" name="psicologica" id="psicologica" value="small" />
+                        <label for="psicologica">Orientação Psicológica</label>
+                    </p>
+
+                    <legend>Realizado em</legend>
+
+
+                    <!-- TODO: VAGAS -->
+
+
+                    <legend>Vagas</legend>
+
+                </fieldset>
+
+
+                <div>
+                    <!-- OBSERVAÇÕES -->
+                    <legend>Observações</legend>
+                    <label for="observacoes"></label>
+                    <textarea class="form-control" id="observacoes" rows="5" cols="33">Observacoes</textarea>
+                </div>
+
+                <br />
+
+                <!-- BOTAO SALVAR E CANCELAR -->
+        </form>
+    </div>
+
+    <script src="cadastro.js"> </script>
+</body>
+
+</html>

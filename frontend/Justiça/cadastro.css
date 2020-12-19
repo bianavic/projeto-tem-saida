@@ -1,0 +1,72 @@
+
+.container{
+
+max-width: 1120px;
+}
+.form{
+    background-color: #E5E5E5;
+
+}
+label,
+textarea {
+    font-size: .8rem;
+    letter-spacing: 0px;
+    /* Base style */
+    font-family: Roboto;
+}
+
+textarea {
+    padding: 10px;
+    line-height: 2.5;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+legend {
+    /* Style for "Contatos" */
+    width: 82px;
+    height: 23px;
+    color: #5a297b;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Style for "Background" */
+body {
+    /* width: 1440px;
+    height: 2493px;
+    background-color: #f4f4f4; */
+    /* Style for "Background" */
+    /* width: 1440px;
+    height: 2493px;
+    background-color: #f4f4f4; */
+}
+
+h1 {
+    /* Style for "Ofício Min" */
+    width: 327px;
+    height: 35px;
+    color: #3e3e3e;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+td {
+    /* Style for "Maria do C" */
+    width: 384px;
+    height: 18px;
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+}
